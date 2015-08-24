@@ -1,12 +1,10 @@
+<div class="container">
+
 <h1>Spotironify</h1>
 <p>Search for song</p>
 
 <input type="text" class="search">
-<button class="search">Search</button>
-
-
-<p class="js-songs-list"></p>
-
+<button class="js-search-button">Search</button>
 
 
 <div class="widget">
@@ -17,17 +15,48 @@
     <div class="btn-play"></div>
 
     <div class="metadata">
-      <p class="title">Hunger of The Pine</p>
-      <p class="author">alt-J</p>
+      <p class="title"></p>
+      <p class="author"></p>
 
       <div class="seekbar">
-        <progress value="5" max="30"></progress>
+        <progress value="5" max="30" class="js-progress-bar"></progress>
       </div>
     </div>
   </div>
   <div class="cover">
-    <img src="https://i.scdn.co/image/04da6dfc1f5f45fdeba938a0cc71cf372524fd43">
+    <img src="https://i.scdn.co/image/04da6dfc1f5f45fdeba938a0cc71cf372524fd43" class="coverimg">
   </div>
 
   <audio id="audio" src="https://p.scdn.co/mp3-preview/8e9c5ffdc38e91659bfe8b6bd44650dfc25a3d31"></audio>
 </div>
+
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+  Albums
+</button>
+
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <!-- Close button -->
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span>&times;</span>
+        </button>
+
+        <h2>This is the modal's header.</h2>
+      </div>
+
+      <div class="modal-body">
+        <p>This is the modal's body.</p>
+      </div>
+
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+</div>
+<!-- Popularity -->
+<!-- genres -->
+<!-- Top song new- get request -->
